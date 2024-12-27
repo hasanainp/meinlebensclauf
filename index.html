@@ -1,179 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hasanain Patel - CV</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: black;
-            line-height: 1.6;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-        .photo-contact {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-        }
-        .photo-contact img {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-            border: 2px solid black;
-        }
-        .contact-details {
-            text-align: left;
-        }
-        main {
-            max-width: 900px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: black;
-            text-align: left;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        .line {
-            border-top: 2px solid black;
-            margin: 15px 0;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul > li {
-            margin-bottom: 10px;
-            position: relative;
-            padding-left: 20px;
-        }
-        ul > li::before {
-            content: "\2022"; /* Unicode for circle bullet */
-            position: absolute;
-            left: 0;
-            color: black;
-        }
-        ul.tick li::before {
-            content: "\2713"; /* Unicode for tick mark */
-            color: black;
-        }
-        .subpoints {
-            margin-left: 20px;
-            text-align: left;
-        }
-        footer {
-            text-align: center;
-            margin: 20px 0;
-            font-size: 0.9em;
-            color: black;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: black;
+        line-height: 1.6;
+      }
+      header {
+        text-align: center;
+        padding: 0px;
+      }
+      .photo-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .photo-contact img {
+        width: 150px;
+        height: auto;
+        border-radius: 50%;
+        border: 2px solid black;
+      }
+      .contact-details {
+        text-align: left;
+      }
+      main {
+        max-width: 900px;
+        margin: -10px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: black;
+        text-align: left;
+        margin-left: 10px;
+      }
+      section {
+        margin-bottom: 10px;
+      }
+      .line {
+        border-top: 2px solid black;
+        margin: 15px 0;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      ul > li {
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 20px;
+      }
+      ul > li::before {
+        content: "\2022"; /* Unicode for circle bullet */
+        position: absolute;
+        left: 0;
+        color: black;
+      }
+      ul.tick li::before {
+        content: "\2713"; /* Unicode for tick mark */
+        color: black;
+      }
+      .subpoints {
+        margin-left: 20px;
+        text-align: left;
+      }
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 0.9em;
+        color: black;
+      }
+      /* PDF Preview Section */
+      .pdf-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+      .pdf-container div {
+        width: 14%;
+        position: relative;
+      }
+      .pdf-container div img {
+        width: 100%;
+        cursor: pointer;
+        transition: transform 0.3s ease, z-index 0.3s ease;
+      }
+      .pdf-container div img:hover {
+        transform: scale(4.5);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(4.5);
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      /* New styles for Education and Practical Experience */
+      .date-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .date-heading span {
+        flex: 1;
+        text-align: right;
+      }
+      .date-heading strong {
+        flex: 2;
+        text-align: left;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="photo-contact">
-            <img src="your-photo.jpg" alt="Hasanain Patel">
-            <div class="contact-details">
-                <h1>Hasanain Patel</h1>
-                <p><strong>Address:</strong> Jakarta, Indonesia</p>
-                <p><strong>Email:</strong> hiip9811@gmail.com</p>
-                <p><strong>Phone:</strong> +62 821 4262 5705</p>
-                <p><strong>Date of Birth:</strong> 09.10.1998 / Madinah, KSA</p>
-                <p><strong>Nationality:</strong> Indian</p>
-                <p><strong>Marital Status:</strong> Single</p>
-            </div>
+      <div class="photo-contact">
+        <img src="White bg photo.jpg" alt="Hasanain Patel">
+        <div class="contact-details">
+          <h1>Hasanain Patel</h1>
+          <p><strong>Address:</strong> Jakarta, Indonesia</p>
+          <p><strong>Email:</strong> hiip9811@gmail.com</p>
+          <p><strong>Phone:</strong> +62 821 4262 5705</p>
+          <p><strong>Date of Birth:</strong> 09.10.1998 / Madinah, KSA</p>
+          <p><strong>Nationality:</strong> Indian</p>
+          <p><strong>Marital Status:</strong> Single</p>
         </div>
+      </div>
     </header>
     <main>
-        <section>
-            <h2>Education</h2>
-            <div class="line"></div>
-            <ul>
-                <li><strong>Masters in Marine Engineering</strong><br>
-                    <span>02/2021 – 02/2024</span><br>
-                    Institut Teknologi Sepuluh Nopember, Indonesia<br>
-                    Diploma: Master of Engineering (M.Eng.) / Magister Teknik (M.T.)
-                </li>
-                <li><strong>Marine Engineering (Double Degree)</strong><br>
-                    <span>08/2016 – 10/2020</span><br>
-                    Hochschule Wismar, Germany<br>
-                    Diploma: Bachelor of Engineering (B.Eng.) / Sarjana Teknik (S.T.)
-                </li>
+      <div class="pdf-container">
+        <div><img src="German degree good image.png" alt="PDF 1"></div>
+        <div><img src="Trascrip page 1 good image.png" alt="PDF 2"></div>
+        <div><img src="s1 degree translation.png" alt="PDF 3"></div>
+        <div><img src="Transcript s1.png" alt="PDF 4"></div>
+        <div><img src="Hasanain Degree Translation.png" alt="PDF 5"></div>
+        <div><img src="Transcript.png" alt="PDF 6"></div>
+      </div>
+      <section>
+        <h2>Practical Experience</h2>
+        <div class="line"></div>
+        <ul>
+          <li>
+            <div class="date-heading">
+              <strong>Coding Educator</strong>
+              <span>12/2020 – 12/2024</span>
+            </div>
+            Bright Champs Academy (Online – Work from Home)
+            <ul class="subpoints">
+              <li>Provided expert programming instruction to students across all educational levels, from elementary to senior high school, encompassing beginner to advanced concepts.</li>
+              <li>Implemented stringent quality control measures to ensure superior teaching standards and spearheaded international teacher recruitment to overcome language barriers and enrich the learning experience.</li>
+              <li>Directed a committed team focused on achieving long-term educational goals and maintaining consistent availability.</li>
             </ul>
-        </section>
-        <section>
-            <h2>Practical Experience</h2>
-            <div class="line"></div>
-            <ul>
-                <li><strong>Electrical Equipment Trainer - Internship</strong><br>
-                    <span>05/2023 – 08/2023</span><br>
-                    MAN Energy Solutions, Surabaya, Indonesia
-                    <ul class="subpoints">
-                        <li>Developed concise, engaging short courses for ship crews using iSpring Suite.</li>
-                        <li>Produced instructional videos for various operations on onboard electrical and mechanical equipment.</li>
-                    </ul>
-                </li>
-                <li><strong>Laboratory Assistant for Mechanical Systems</strong><br>
-                    <span>04/2019 – 04/2020</span><br>
-                    Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia
-                    <ul class="subpoints">
-                        <li>Trained in the operation of mechanical equipment with emphasis on safety protocols.</li>
-                        <li>Provided interactive learning units on system measurements and analysis techniques.</li>
-                        <li>Conducted training in hazard identification and management specific to maritime environments.</li>
-                    </ul>
-                </li>
-                <li><strong>Speedboat Designer - Internship</strong><br>
-                    <span>12/2018 – 01/2019</span><br>
-                    PT. PAL Indonesia (Persero), Surabaya, Indonesia
-                    <ul class="subpoints">
-                        <li>Designed speedboats using Maxurf software with advanced methods.</li>
-                        <li>Performed detailed finishing using AutoCAD.</li>
-                    </ul>
-                </li>
+          </li>
+          <li>
+            <div class="date-heading">
+              <strong>Electrical Equipment Trainer - Internship</strong>
+              <span>05/2023 – 08/2023</span>
+            </div>
+            MAN Energy Solutions, Surabaya, Indonesia
+            <ul class="subpoints">
+              <li>Developed concise, engaging short courses for ship crews using iSpring Suite.</li>
+              <li>Produced instructional videos for various operations on onboard electrical and mechanical equipment.</li>
             </ul>
-        </section>
-        <section>
-            <h2>Awards</h2>
-            <div class="line"></div>
-            <ul class="tick">
-                <li>Winner of KNB - Indonesian Government Scholarship for Master’s Degree Programs (2021–2024)</li>
+          </li>
+          <li>
+            <div class="date-heading">
+              <strong>Finance Manager</strong>
+              <span>04/2021 – 06/2021</span>
+            </div>
+            KataNenek Kopi, Jakarta, Indonesia
+            <ul class="subpoints">
+              <li>Developed and executed strategic financial plans, budgets, and projections that directly informed and guided the organization’s critical economic decisions.</li>
+              <li>Directed comprehensive budget management, rigorously aligning financial resources with organizational goals and delivering consistent, strategic updates to senior leadership.</li>
+              <li>Crafted and delivered precise financial statements - income statements, balance sheets, and cash flow reports - ensuring full compliance with regulatory standards.</li>
+              <li>Cost Control: Identified cost-saving opportunities and implemented measures to optimize operational efficiency while maintaining quality and productivity.</li>
+              <li>Proactively assessed financial risks and formulated strategies to mitigate them, safeguarding the organization’s long-term economic stability.</li>
             </ul>
-        </section>
-        <section>
-            <h2>Computer Skills</h2>
-            <div class="line"></div>
-            <ul class="tick">
-                <li><strong>Software:</strong> MS PowerPoint, MS Word, MS Excel, Performance Analysis, Software Analysis, AutoCAD</li>
-                <li><strong>Programming:</strong> CFD, Maxurf, Numeca, iSpring, Code.org, Thunkable, Scratch, VideoShow, Visual Studio</li>
+          </li>
+          <li>
+            <div class="date-heading">
+              <strong>Marketing Staff</strong>
+              <span>01/2021 – 03/2021</span>
+            </div>
+            PT Aqnil Putra Pratama, Jakarta, Indonesia
+            <ul class="subpoints">
+              <li>Market Research - Conducted comprehensive market research to uncover trends, customer preferences, and competitive positioning, delivering actionable insights to drive the marketing team’s strategy.</li>
+              <li>Event Coordination: Supported the planning and execution of marketing events, trade shows, and product launches, managing logistics and promotional materials to maximize impact.</li>
+              <li>Customer Engagement: Engaged with customers through social media and direct outreach, fostering solid relationships and enhancing brand loyalty.</li>
+              <li>Performance Analysis: Monitored and analyzed marketing initiative performance, leveraging data to evaluate effectiveness and refine future campaigns for optimal results.</li>
+              
+              <strong>Sub Task</strong>
+              <li>Assisted in underwater welding by preparing essential tools for ship maintenance, creating portable oxygen supplies for divers, and setting up electrical equipment for underwater welding. Maintained regular communication with the ship captain and crew to coordinate maintenance procedures and provide updates.</li>
             </ul>
-        </section>
-        <section>
-            <h2>Languages</h2>
-            <div class="line"></div>
-            <ul class="tick">
-                <li>English - Fluent in spoken and written</li>
-                <li>Bahasa Indonesia - Very good knowledge of spoken and written</li>
-                <li>Arabic - Good in writing and speaking</li>
-                <li>German - Basic knowledge</li>
-                <li>Urdu - Mother tongue</li>
+          </li>          
+          <li>
+            <div class="date-heading">
+              <strong>Laboratory Assistant for Mechanical Systems</strong>
+              <span>04/2019 – 04/2020</span>
+            </div>
+            Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia
+            <ul class="subpoints">
+              <li>Trained in the operation of mechanical equipment with emphasis on safety protocols.</li>
+              <li>Provided interactive learning units on system measurements and analysis techniques.</li>
+              <li>Conducted training in hazard identification and management specific to maritime environments.</li>
             </ul>
-        </section>
+          </li>
+          <li>
+            <div class="date-heading">
+              <strong>Speedboat Designer - Internship</strong>
+              <span>12/2018 – 01/2019</span>
+            </div>
+            PT. PAL Indonesia (Persero), Surabaya, Indonesia
+            <ul class="subpoints">
+              <li>Designed speedboats using Maxurf software with advanced methods.</li>
+              <li>Performed detailed finishing using AutoCAD.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <div class="line"></div>
+        <ul>
+          <li>
+            <div class="date-heading">
+              <strong>Masters in Marine Engineering</strong>
+              <span>02/2021 – 02/2024</span>
+            </div>
+            Institut Teknologi Sepuluh Nopember, Indonesia<br>
+            Diploma: Master of Engineering (M.Eng.) / Magister Teknik (M.T.)
+          </li>
+          <li>
+            <div class="date-heading">
+              <strong>Marine Engineering (Double Degree)</strong>
+              <span>08/2016 – 10/2020</span>
+            </div>
+            Hochschule Wismar, Germany<br>
+            Diploma: Bachelor of Engineering (B.Eng.) / Sarjana Teknik (S.T.)
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Awards</h2>
+        <div class="line"></div>
+        <ul class="tick">
+          <li>Winner of KNB - Indonesian Government Scholarship for Master’s Degree Programs (2021–2024)</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Computer Skills</h2>
+        <div class="line"></div>
+        <ul class="tick">
+          <li><strong>Software:</strong> MS PowerPoint, MS Word, MS Excel, Performance Analysis, Software Analysis, AutoCAD</li>
+          <li><strong>Programming:</strong> CFD, Maxurf, Numeca, iSpring, Code.org, Thunkable, Scratch, VideoShow, Visual Studio</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Languages</h2>
+        <div class="line"></div>
+        <ul class="tick">
+          <li>English - Fluent in spoken and written</li>
+          <li>Bahasa Indonesia - Very good knowledge of spoken and written</li>
+          <li>Arabic - Good in writing and speaking</li>
+          <li>German - Basic knowledge</li>
+          <li>Urdu - Mother tongue</li>
+        </ul>
+      </section>
     </main>
     <footer>
-        <p>Jakarta, 5 August 2024 | &copy; 2024 Hasanain Patel</p>
+      <p>Frankfurt, 12 December 2024 | &copy; 2024 Hasanain Patel</p>
     </footer>
-</body>
+  </body>
 </html>
